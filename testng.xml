@@ -3,8 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.tests.GreenKartAutomation"/>
-      
+      <class name="com.tests.GreenKartAutomation">
+		  <methods>
+			<include name="orderFruits"/>
+			<include name="orderVegetables"/>
+		  </methods>
+	  </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
